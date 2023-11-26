@@ -20,16 +20,16 @@ jobs:
             - name: Terraform init
               id: init
               run: terraform init
-              working-directory: ./Terraform
+              working-directory: ./
             - name: Terraform Validate
               id: validate
               run: terraform validate
-              working-directory: ./Terraform
+              working-directory: ./
             - name: Terraform Plan
               id: Plan
               run: terraform plan
-              working-directory: ./Terraform
+              working-directory: ./
             - name: Terraform Apply
               id: Apply
               run: terraform apply --auto-approve
-              working-directory: ./Terraform
+              working-directory: ./
